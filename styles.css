@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  background-color: black;
+  text-align: center;
+}
+
+/***********************   search meal    ***************/
+header {
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+}
+header a {
+  text-decoration: none;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: larger;
+  transition: text-decoration 1s ease;
+}
+header a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+main {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h1 {
+  margin: 50px;
+  position: relative;
+}
+main input {
+  width: 30%;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: large;
+  outline: none;
+  color: black;
+}
+
+/**************   searchResults  ************/
+
+#searchResults,
+#favoriteMeals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+#searchResults li,
+#favoriteMeals li {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 10px;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  justify-content: center;
+  border-radius: 10px;
+}
+#searchResults li img,
+#favoriteMeals li img {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+}
+#searchResults li div,
+#favoriteMeals li div {
+  display: flex;
+  justify-content: space-between;
+}
+#searchResults li div button,
+#favoriteMeals li div button {
+  background-color: transparent;
+  outline: none;
+  padding: 3px 7px;
+  border: solid white 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#searchResults li div button:last-child,
+#favoriteMeals li div button:last-child {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+#searchResults li div button:hover,
+#searchResults li div button:hover i,
+#favoriteMeals li div button:hover,
+#favoriteMeals li div button:hover i {
+  color: black;
+  background-color: white;
+}
+
+button.FavMeal,
+button.FavMeal i {
+  color: black !important;
+  background-color: white !important;
+}
+
+/***********    mealDetails    *****************/
+.mealDetails {
+  background-color: rgb(93 38 212);
+}
+#mealDetails {
+  width: 80%;
+  height: 400px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  letter-spacing: 1px;
+  gap: 20px;
+}
+h2 {
+  margin-top: 10px;
+}
+#mealDetails img {
+  width: 250px;
+  border-radius: 50%;
+  /* margin-right: 50px; */
+}
+.mealDetailshead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+#mealDetails button {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: transform 0.5s linear;
+}
+#mealDetails button:hover,
+#mealDetails button:hover a {
+  background-color: white;
+  color: black;
+  transform: scale(1.2);
+}
+#mealDetails button a {
+  text-decoration: none;
+}
